@@ -27,8 +27,8 @@ body {
 /* Estilo para a imagem redonda no canto superior direito */
 .round-image {
     position: absolute;
-    top: 20%; /* Distância do topo */
-    right: 25%; /* Distância da direita */
+    top: 0%; /* Distância do topo */
+    right: -100%; /* Distância da direita */
     width: 250px; /* Largura da imagem */
     height: 250px; /* Altura da imagem */
     border-radius: 50%; /* Transforma a imagem em círculo */
@@ -56,6 +56,7 @@ body {
   }
   
   .button {
+    text-decoration: none;
     outline: 0 !important;
     border: 0 !important;
     width: 40px;
@@ -102,7 +103,7 @@ body {
     width: 6em;
     height: 6em;
     position: absolute;
-    top: 10%;
+    top: -20%;
     right: 80%; /* Ajuste conforme necessário */
   }
   
@@ -454,4 +455,12 @@ body {
     100% {
       transform: rotate(0deg);
     }
+  }
+
+  .page-below{
+    height: 100vh; /* Altura igual à altura da janela visível */
+    overflow-y: auto; /* Permitir rolagem vertical */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #f0f0f0; /* Cor de fundo */
+    top: 150%;
   }
