@@ -71,46 +71,23 @@
   
   </div>
 
-      <!-- Script para donwload do currículo -->
-      <script>
-        // Seleciona o botão de currículo pelo ID
-        const downloadButton = document.getElementById('download-curriculum');
-    
-        // URL do arquivo PDF
-        const pdfUrl = 'Arquivos/Currículo.pdf';
-    
-        // Função para iniciar o download ao clicar no botão
-        downloadButton.addEventListener('click', () => {
-            // Cria um link temporário
-            const link = document.createElement('a');
-            link.href = pdfUrl;
-            link.target = '_blank'; // Abre o link em uma nova aba, se necessário
-            link.setAttribute('download', 'curriculo.pdf'); // Nome do arquivo a ser baixado
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        });
-    </script>
+  <div class="conteudo__geral">
+    <div class="container">
+        <div class="container-carrossel">
+            <div class="carrossel">
+                <a class="carrossel-item" href="https://github.com/Leoyzs/Java-projetos-DIO"></a>
+                <div class="carrossel-item"></div>
+                <a class="carrossel-item" href="https://github.com/Leoyzs/Java-projetos-DIO"></a>
+                <div class="carrossel-item"></div>
+                <a class="carrossel-item" href="https://github.com/Leoyzs/Java-projetos-DIO"></a>
+                <div class="carrossel-item"></div>
+                
+            </div>
+        </div>
+    </div>
+</div>
 
-    <!--SCRIPT PARA BOTOES HOME ABOUT ETC-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-    $(document).ready(function() {
-        // Adiciona scroll suave para todos os links âncora
-        $("a").on('click', function(event) {
-            if (this.hash !== "") {
-                event.preventDefault();
-                var hash = this.hash;
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function(){
-                    window.location.hash = hash;
-                });
-            }
-        });
-    });
-</script>
-
+  <script src="./script.js"></script>
 
       
 </body>
