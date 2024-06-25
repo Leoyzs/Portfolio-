@@ -16,6 +16,7 @@ body {
     margin: 0; /* Remover margens padrão */
     overflow-x: hidden; /* Esconder a barra de rolagem horizontal se a imagem for maior */
     position: relative; /* Para posicionar elementos filhos relativamente a este */
+    background-color: #686868;
 }
 
 /* Estilo para o conteúdo */
