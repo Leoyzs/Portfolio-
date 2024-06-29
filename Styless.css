@@ -621,21 +621,22 @@ body {
   }
 
   .round-image {
-      width: 200px;
-      height: 200px;
+      width: 150px;
+      height: 150px;
       margin-bottom: 20%; /* Espaçamento entre as divs */
       margin-top: -60%;
       margin-right: 75%;
   }
 
   .bio {
-    margin-top: 30%; 
+    margin-top: 60%; 
     max-width: 100%;
-    margin-right: -25%;
+    margin-right: -30%;
   }
 
   .carrossel-item {
-    height: 150px; /* Altura reduzida para dispositivos móveis */
+    max-height: 150px; /* Altura reduzida para dispositivos móveis */
+    max-height: 150px;
     margin-bottom: 10px; /* Espaçamento menor entre as divs */
     margin-top: -70%;
   }
