@@ -629,13 +629,13 @@ body {
       height: 150px;
       margin-bottom: 20%; /* Espaçamento entre as divs */
       margin-top: -60%;
-      margin-right: 75%;
+      margin-right: 95%;
   }
 
   .bio {
     margin-top: 60%; 
     max-width: 100%;
-    margin-right: -35%;
+    margin-right: -45%;
   }
 
   .carrossel-item {
