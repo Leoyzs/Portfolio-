@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sua Página com Imagem de Fundo</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="Styless.css">
 </head>
 <body>
@@ -13,9 +13,9 @@
     <div class="content">
       <div class="button-container">
         <a class="button" href="#home-section">Home</a>
-        <a class="button" href="#projects-section">Projects</a>
-        <a class="button" href="#about-section">AboutMe</a>
-        <a class="button" href="#experience-section">Experiência</a>
+        <a class="button" href="#projects-section" id="openProjects">Projects</a>
+        <a class="button" href="#about-section" id="openAboutMe">AboutMe</a>
+        <a class="button" href="#Currículo" id="openCurriculo">Currículo</a>
       </div>
     </div>
   
@@ -85,6 +85,16 @@
             </div>
         </div>
     </div>
+</div>
+
+<div id="aboutMeModal" class="modal">
+  <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <h2>About Me</h2>
+      <p>Desenvolvedor Java com uma sólida formação em Análise e Desenvolvimento de Sistemas pela UniCesumar. Apaixonado por desenvolvimento Back-End em Java, busco constantemente aprimorar minhas habilidades e conhecimentos nessa área. Possuo experiência em desenvolvimento mobile utilizando React Native, o que me permite criar aplicativos eficientes e intuitivos para dispositivos móveis. Além disso, tenho uma boa base em desenvolvimento web, com competências em HTML e CSS para construir interfaces de usuário atraentes e responsivas.
+
+        Minha trajetória acadêmica e prática me proporcionou uma compreensão abrangente dos princípios de programação, padrões de design e melhores práticas de desenvolvimento. Estou sempre em busca de novos desafios e oportunidades para aplicar e expandir minhas habilidades técnicas. Comprometido com a entrega de soluções de alta qualidade, estou pronto para contribuir com projetos inovadores e colaborar com equipes dedicadas para alcançar objetivos comuns.</p>
+  </div>
 </div>
 
   <script src="./script.js"></script>

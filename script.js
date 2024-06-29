@@ -5,7 +5,7 @@ src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
         const downloadButton = document.getElementById('download-curriculum');
     
         // URL do arquivo PDF
-        const pdfUrl = 'Arquivos/Currículo.pdf';
+        const pdfUrl = 'Arquivos/curriculo.pdf';
     
         // Função para iniciar o download ao clicar no botão
         downloadButton.addEventListener('click', () => {
@@ -152,3 +152,96 @@ const initEvents = () => {
 initEvents();
 
 
+
+document.getElementById('openProjects').addEventListener('click', function(event) {
+  event.preventDefault();
+  var newWindow = window.open('', '_blank');
+  var newContent = `
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Projects</title>
+          <style>
+              body {
+                  margin: 0;
+                  background-color: black;
+                  display: grid;
+                  height: 100vh;
+                  grid-template-columns: repeat(3, 1fr);
+                  grid-template-rows: repeat(3, 1fr);
+              }
+
+              .grid-item {
+                  position: relative;
+                  border: 1px solid white;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  font-size: 24px;
+                  color: white;
+                  text-decoration: none;
+                  overflow: hidden;
+              }
+
+              .grid-item img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  position: absolute;
+                  z-index: -1;
+              }
+
+              .grid-item div {
+                  z-index: 1;
+              }
+
+          </style>
+      </head>
+      <body>
+          <a href="https://github.com/Leoyzs" class="grid-item"><img src="https://via.placeholder.com/300x300" alt="Image"><div>Projeto 1</div></a>
+          <a href="https://github.com/Leoyzs" class="grid-item"><img src="https://via.placeholder.com/300x300" alt="Image"><div>Projeto 2</div></a>
+          <a href="https://github.com/Leoyzs" class="grid-item"><img src="https://via.placeholder.com/300x300" alt="Image"><div>Projeto 3</div></a>
+          <a href="https://github.com/Leoyzs" class="grid-item"><img src="https://via.placeholder.com/300x300" alt="Image"><div>Projeto 4</div></a>
+          <a href="https://github.com/Leoyzs" class="grid-item"><img src="https://via.placeholder.com/300x300" alt="Image"><div>Projeto 5</div></a>
+          <a href="https://github.com/Leoyzs" class="grid-item"><img src="https://via.placeholder.com/300x300" alt="Image"><div>Projeto 6</div></a>
+          <a href="https://github.com/Leoyzs" class="grid-item"><img src="https://via.placeholder.com/300x300" alt="Image"><div>Projeto 7</div></a>
+          <a href="https://github.com/Leoyzs" class="grid-item"><img src="https://via.placeholder.com/300x300" alt="Image"><div>Projeto 8</div></a>
+          <a href="https://github.com/Leoyzs" class="grid-item"><img src="https://via.placeholder.com/300x300" alt="Image"><div>Projeto 9</div></a>
+      </body>
+      </html>
+  `;
+  newWindow.document.write(newContent);
+  newWindow.document.close();
+});
+
+document.getElementById('openCurriculo').addEventListener('click', function(event) {
+  event.preventDefault();
+  window.open('Arquivos/curriculo.pdf');
+});
+
+var modal = document.getElementById("aboutMeModal");
+
+// Obter o botão que abre o modal
+var btn = document.getElementById("openAboutMe");
+
+// Obter o elemento <span> que fecha o modal
+var span = document.getElementById("closeModal");
+
+// Quando o usuário clicar no botão, abre o modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// Quando o usuário clicar no <span> (x), fecha o modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// Quando o usuário clicar em qualquer lugar fora do modal, fecha o modal
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
